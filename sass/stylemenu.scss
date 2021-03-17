@@ -1,0 +1,321 @@
+// Imports 
+
+@import "Utils/_variables.scss";
+@import "Utils/_mixins.scss";
+@import "Utils/_animations.scss";
+
+//* Fonts *//
+
+body {
+    font-family: $font_text;
+    display: flex;
+    flex-direction: column;
+}
+
+//* General *//
+
+a {
+    text-decoration: none; 
+    color: black ;
+}
+
+body {
+    margin: 0 0 0 0;
+}
+
+h1 {
+    margin: 0 0 0 0;
+    font-size: 1.3em;
+}
+
+button {
+    cursor: pointer;
+}
+
+button:focus {
+    outline: none;
+}
+
+//* Header and article style *//
+
+header {
+    padding-top:20px ;
+}
+
+.fa-arrow-left {
+    position: absolute;
+    margin: 6px 0 0 7%;
+    font-size: 1.3em;
+}
+
+#logo {
+    display: block;
+    margin: 0 auto 13px;
+    width: 180px;
+}
+
+.header__img {
+    width: 108%;
+    @media all and (min-width: 768px) {
+        width: 104%;
+        position: relative;
+        bottom: 90px;
+    }
+    @media all and (min-width: 860px) {
+        width: 104%;
+        position: relative;
+        bottom: 130px;
+    }
+    @media all and (min-width: 985px) {
+        width: 104%;
+        position: relative;
+        bottom: 190px;
+    }
+    @media all and (min-width: 1090px) {
+        width: 104%;
+        position: relative;
+        bottom: 280px;
+    }
+}
+
+.header__photo {
+    overflow: hidden;
+    @media all and (min-width: 768px) {
+        width: 100%;
+        height: 450px;
+    }    
+}
+
+//* Primary container *//
+
+section {
+    background-color: $background_color;
+    z-index: 1;
+    border-radius: 30px 30px 0 0;
+    padding-top: 25px;
+}
+
+.menu {
+    margin-top: -56px;
+}
+
+.menu__header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0px 0px -8px 6%;
+    @media all and (min-width: 768px) {
+        justify-content: center;
+        margin-left: 0%;
+    }
+}
+
+.menu__choix {
+    @media all and (min-width: 768px) {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+}
+
+.menu__choix__plats {
+    @media all and (min-width: 768px) {
+        width: 33%;
+    }
+}
+
+
+
+section h1 {
+    font-family: $font_title;
+    font-size: 1.5em;
+    font-weight: normal;
+}
+
+.menu__header__heart {
+    font-size: 1.6em;
+    margin: 3px 20% 0 0;
+    @media all and (min-width: 768px) {
+        margin: 3px 0 0 40px;
+    }
+}
+
+.far.fa-heart {
+    position: absolute;
+    padding: 0 1px 0;
+    z-index: 2;
+    &:hover {
+      transition: color 0.6s ease;
+      color: transparent;
+    }
+}
+
+.post-it {
+    position: absolute;
+    width: 28px;
+    height: 28px;
+    background: $background_color;
+    transition: all 0.4s ease-in-out;
+    z-index: 1;
+}
+
+.far.fa-heart:hover + .post-it {
+    transform: translate(0px, -28px);
+  }
+
+.fas.fa-heart {
+    position: absolute;
+    padding: 0 1px 0;
+    background: linear-gradient(to top, $secondary_color, $primary_color);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+h2 {
+    font-size: 1.1em;
+    font-weight: normal;
+    margin: 35px 0 5px 6%;
+}
+
+.greenline {
+    border-top: solid 3px $tertiary_color;
+    width: 2.5rem;
+    margin: 0 0 0 6%;
+}
+
+.plat {
+    box-shadow: 0px 3px 8px 2px rgb(235, 235, 235);
+    border-radius: 15px;
+    margin: 15px 4% 0;
+    background-color: white;
+    padding-left: 10px;
+    overflow: hidden;
+    display: flex;
+    opacity: 1;
+    justify-content: space-between;
+    animation: 0.4s fadeIn ease-out backwards;
+    &:nth-of-type(3) {
+        animation-delay: 0.4s;
+    }    
+    &:nth-of-type(4) {
+        animation-delay: 0.8s;
+    }    
+    &:nth-of-type(5) {
+        animation-delay: 1.2s;
+    }  
+}
+
+h3 {
+    margin: 0 0 0 0;
+    font-size: 1em;
+    margin-bottom: 5px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.plat p {
+    margin: 0 0 0 0;
+    font-size: 0.9em;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.plat__name {
+    padding: 10px 0 10px;
+    overflow: hidden;
+}
+
+.plat__price {
+    display: flex;
+    transition: all 0.5s ease-in-out;
+}
+
+.price {
+    font-size: 0.9em;
+    font-weight: bold;
+    margin-top: 37px;
+    padding: 0 20px 0 25px;
+    transition: all 0.5s ease-in-out; 
+}
+
+.checkbox {
+    display: flex;
+    background-color: #99E2D0;
+    width: 55px;
+    justify-content: center;
+    align-items: center;
+    margin-left: -60px;
+    transform: translate(60px);
+    transition: all 0.5s ease-in-out;   
+}
+
+.fa-check-circle {
+    font-size: 1.2em;
+    color: white;
+    transition: all 0.5s ease-in-out;
+}
+
+.plat:hover .checkbox {
+    transform: translate(0px);
+}
+
+.plat:hover .fa-check-circle {
+    transform: rotate(1080deg);
+}
+
+.plat:hover .price {
+    transform: translate(-60px);
+}
+
+.plat:hover .plat__price {
+    padding-left: 38px;
+}
+
+
+.menu__ordrerbtn {
+    @include button;
+    display: block;
+    margin: 45px auto 75px;
+    padding: 15px 50px;
+}
+
+.menu__ordrerbtn:hover {
+    @include buttonhover;
+}
+
+
+//* Footer's style *//
+
+footer {
+    background-color: $footer_color; 
+    color: white;
+    padding: 25px 0 20px 6%;
+}
+
+footer h1 {
+    font-family: $font_title; 
+    font-weight: normal; 
+    font-size: 1.3em;
+    margin-bottom: 15px;
+}
+
+footer p {
+    margin: 0 0 8px;
+}
+
+footer a {
+    color: white;
+}
+
+.fa-utensils {
+    margin: 0 8px 0 2px;
+    font-size: 0.8em;
+}
+
+.fa-hands-helping {
+    margin-right: 4px;
+    font-size: 0.8em;
+    transform: rotate(-10deg);
+}
