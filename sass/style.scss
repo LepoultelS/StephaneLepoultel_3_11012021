@@ -323,7 +323,7 @@ figcaption {
     position: absolute;
     padding: 0 1px 0;
     background: linear-gradient(to top, $secondary_color, $primary_color);
-    -webkit-background-clip: text;
+    clip-path: polygon(50% 22%, 57% 13%, 69% 6%, 83% 7%, 93% 14%, 97% 31%, 93% 49%, 82% 64%, 67% 81%, 51% 92%, 33% 77%, 16% 60%, 6% 42%, 4% 27%, 6% 17%, 14% 8%, 27% 6%, 40% 11%);
     color: transparent;
 }
 
