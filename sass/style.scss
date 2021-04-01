@@ -91,12 +91,12 @@ header {
     width: 180px;
 }
 
-//* Nav *// 
-nav {
+//* Recherche *// 
+.search {
     text-align: center;
 }
 
-#nav__topitem {
+#search__topitem {
     background-color: rgb(234, 234, 234);
     color: rgb(53, 53, 53);  
     font-weight: bold; 
@@ -106,7 +106,7 @@ nav {
     justify-content: center;    
 }
     
-#nav__topitem p {
+#search__topitem p {
     margin-right: 15px;
 }
 
@@ -114,29 +114,29 @@ nav {
     margin: 14px 15px 0 0;
 }
 
-#nav__block {
+#search__block {
     background-color: $background_color;
     padding: 30px 0 55px 0; 
     margin-bottom: 45px;
 }
 
-nav h2 {
+.search h2 {
     margin: 0 0;
     line-height: 1.2em; 
     margin-bottom: 15px;
 }
 
-#nav__block p {
+#search__block p {
     color:  rgb(101, 101, 101); 
     margin-bottom: 30px;
 }
 
-#nav__btn {
+#search__btn {
     @include button;
     padding: 15px 22px;
 }
 
-#nav__btn:hover {
+#search__btn:hover {
     @include buttonhover;
 }
 
