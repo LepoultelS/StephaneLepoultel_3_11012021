@@ -135,11 +135,11 @@ button {
 
 .far.fa-heart {
     position: absolute;
-    padding: 0 1px 0;
+    padding: 0;
     z-index: 2;
     &:hover {
-      transition: color 0.6s ease;
-      color: transparent;
+      transition: 0.5s ease;
+      color: black;
     }
 }
 
@@ -148,7 +148,7 @@ button {
     width: 28px;
     height: 28px;
     background: $background_color;
-    transition: all 0.4s ease-in-out;
+    transition: 0.5s ease;
     z-index: 1;
 }
 
@@ -158,7 +158,7 @@ button {
 
 .fas.fa-heart {
     position: absolute;
-    padding: 0 1px 0;
+    padding: 0;
     background: linear-gradient(to top, $secondary_color, $primary_color);
     clip-path: polygon(49% 24%, 57% 13%, 69% 6%, 83% 7%, 92% 15%, 97% 27%, 94% 43%, 82% 64%, 67% 81%, 51% 92%, 33% 77%, 16% 60%, 6% 42%, 4% 27%, 6% 17%, 14% 8%, 27% 6%, 40% 11%);
     color: transparent;
@@ -249,22 +249,20 @@ h3 {
     transition: all 0.5s ease-in-out;
 }
 
-.plat:hover .checkbox {
-    transform: translate(0px);
+.plat:hover {
+    .checkbox {
+        transform: translate(0px);
+    }
+    .fa-check-circle {
+        transform: rotate(720deg);
+    }
+    .price {
+        transform: translate(-60px);
+    }
+    .plat__price {
+        padding-left: 40px;
+    }
 }
-
-.plat:hover .fa-check-circle {
-    transform: rotate(1080deg);
-}
-
-.plat:hover .price {
-    transform: translate(-60px);
-}
-
-.plat:hover .plat__price {
-    padding-left: 38px;
-}
-
 
 .menu__ordrerbtn {
     @include button;

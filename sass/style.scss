@@ -38,7 +38,7 @@ button {
     height: 100%;
     opacity: 0;
     z-index: -1;
-    animation: 1.85s hidescreen;
+    animation: 6s hidescreen;
 }
 
 .loader--dot {
@@ -49,9 +49,9 @@ button {
 }
 
 .fa-circle {
-    font-size: 1.6em;
+    font-size: 1.5em;
     margin-right: 2px;
-    animation: 1.5s dotsgone infinite ease-in-out backwards;
+    animation: 2s dotsgone infinite ease-in-out backwards;
 }
 
 .circle1 {
@@ -290,11 +290,11 @@ figcaption {
 
 .far.fa-heart {
     position: absolute;
-    padding: 0 1px 0;
+    padding: 0;
     z-index: 2;
     &:hover {
-      transition: color 0.6s ease;
-      color: transparent;
+      transition: color 0.5s ease;
+      color: black;
     }
 }
 
@@ -303,7 +303,7 @@ figcaption {
     width: 28px;
     height: 28px;
     background: white;
-    transition: all 0.4s ease-in-out;
+    transition: 0.5s ease;
     z-index: 1;
 }
 
@@ -313,7 +313,7 @@ figcaption {
 
 .fas.fa-heart {
     position: absolute;
-    padding: 0 1px 0;
+    padding: 0;
     background: linear-gradient(to top, $secondary_color, $primary_color);
     clip-path: polygon(50% 22%, 57% 13%, 69% 6%, 83% 7%, 93% 14%, 97% 31%, 93% 49%, 82% 64%, 67% 81%, 51% 92%, 33% 77%, 16% 60%, 6% 42%, 4% 27%, 6% 17%, 14% 8%, 27% 6%, 40% 11%);
     color: transparent;
