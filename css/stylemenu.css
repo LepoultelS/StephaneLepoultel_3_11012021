@@ -63,7 +63,6 @@ h1 {
 button {
   cursor: pointer;
 }
-
 button:focus {
   outline: none;
 }
@@ -133,6 +132,11 @@ button:focus {
   border-radius: 30px 30px 0 0;
   padding-top: 25px;
 }
+.menu h1 {
+  font-family: "Shrikhand";
+  font-size: 1.5em;
+  font-weight: normal;
+}
 
 .menu__header {
   display: flex;
@@ -159,12 +163,6 @@ button:focus {
   .menu__choix__plats {
     width: 33%;
   }
-}
-
-section h1 {
-  font-family: "Shrikhand";
-  font-size: 1.5em;
-  font-weight: normal;
 }
 
 .menu__header__heart {
@@ -241,19 +239,18 @@ h2 {
 .plat:nth-of-type(5) {
   animation-delay: 1.2s;
 }
-
-h3 {
+.plat p {
   margin: 0 0 0 0;
-  font-size: 1em;
-  margin-bottom: 5px;
+  font-size: 0.9em;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
 }
 
-.plat p {
+h3 {
   margin: 0 0 0 0;
-  font-size: 0.9em;
+  font-size: 1em;
+  margin-bottom: 5px;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -331,20 +328,16 @@ h3 {
 footer {
   background-color: #383838;
   color: white;
-  padding: 25px 0 20px 6%;
+  padding: 25px 0px 20px 6%;
 }
-
 footer h1 {
   font-family: "Shrikhand";
   font-weight: normal;
-  font-size: 1.3em;
   margin-bottom: 15px;
 }
-
 footer p {
-  margin: 0 0 8px;
+  margin: 0 0 8px 0;
 }
-
 footer a {
   color: white;
 }

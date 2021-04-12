@@ -4,7 +4,7 @@
   "description": "Projet 3 de la formation développeur web d'OpenClassrooms",
   "main": "index.js",
   "scripts": {
-    "sass": "sass --watch ./sass/style.scss:./css/style.css"
+    "sass": "sass --watch ./sass/stylemenu.scss:./css/stylemenu.css"
   },
   "repository": {
     "type": "git",

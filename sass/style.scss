@@ -25,10 +25,9 @@ h1 {
 
 button {
     cursor: pointer;
-}
-
-button:focus {
-    outline: none;
+    &:focus {
+        outline: none;
+    }
 }
 
 //* Loader *// 
@@ -94,6 +93,11 @@ header {
 //* Recherche *// 
 .search {
     text-align: center;
+    h2 {
+        margin: 0 0;
+        line-height: 1.2em; 
+        margin-bottom: 15px;
+    }
 }
 
 #search__topitem {
@@ -103,11 +107,10 @@ header {
     font-size: 0.95em; 
     border-top: solid 1.8px rgb(210, 210, 210);
     display: flex;
-    justify-content: center;    
-}
-    
-#search__topitem p {
-    margin-right: 15px;
+    justify-content: center;
+    p {
+        margin-right: 15px;
+    }   
 }
 
 .fa-map-marker-alt {
@@ -118,17 +121,10 @@ header {
     background-color: $background_color;
     padding: 30px 0 55px 0; 
     margin-bottom: 45px;
-}
-
-.search h2 {
-    margin: 0 0;
-    line-height: 1.2em; 
-    margin-bottom: 15px;
-}
-
-#search__block p {
-    color:  rgb(101, 101, 101); 
-    margin-bottom: 30px;
+    p {
+        color:  rgb(101, 101, 101); 
+        margin-bottom: 30px;
+    }
 }
 
 #search__btn {
@@ -143,6 +139,17 @@ header {
 //Primary container *//
 #fstContainer {
     margin-bottom: 65px;
+    h2 {
+        margin: 0px 0px 25px 6%;
+    }
+    p {
+        font-weight: bold;
+        font-size: 0.9em;
+        margin-right: auto;
+        margin-left: auto;
+        @media all and (min-width: 768px) {
+        }   
+    }
 }
 
 .fstContainer__blockBtn {
@@ -150,19 +157,6 @@ header {
         display: flex;
         margin: 0 6% 0 6%;
     }
-}
-
-#fstContainer h2 {
-    margin: 0px 0px 25px 6%;
-}
-
-#fstContainer p {
-    font-weight: bold;
-    font-size: 0.9em;
-    margin-right: auto;
-    margin-left: auto;
-    @media all and (min-width: 768px) {
-    }       
 }
 
 .fstContainer__btn {
@@ -204,13 +198,13 @@ header {
 
 #rnd2 {
     @include numberscircle;
-    margin-right: 22px;
+    margin-right: 25px;
     margin-left: -9px;
 }
 
 #rnd3 {
     @include numberscircle;
-    margin-right: 22px;
+    margin-right: 25px;
     margin-left: -9px;
 }
 
@@ -239,6 +233,13 @@ header {
 #scndContainer {
     background-color: $background_color;
     padding: 0 5% 45px;
+    h2 {
+        margin: 0 0 20px 1%;
+        padding-top: 45px;
+    }
+    p {
+        margin: 14px 0 10px 15px;
+    }
 }
 
 #scndContainer__fstLine {
@@ -252,11 +253,6 @@ header {
     @media all and (min-width: 768px) {
         display: flex;
     }
-}
-
-#scndContainer h2 {
-    margin: 0 0 20px 1%;
-    padding-top: 45px;
 }
 
 figure {
@@ -284,10 +280,6 @@ figcaption {
 .scndContainer__name {
     margin: 15px 0 5px 15px;
     font-size: 1.1em;
-}
-
-#scndContainer p {
-    margin: 14px 0 10px 15px;
 }
 
 .scndContainer__icon {
@@ -375,20 +367,17 @@ footer {
     background-color: $footer_color; 
     color: white;
     padding: 25px 0px 20px 6% ;
-}
-
-footer h1 {
-    font-family: $font_title; 
-    font-weight: normal; 
-    margin-bottom: 15px;
-}
-
-footer p {
-    margin: 0 0 8px 0;
-}
-
-footer a {
-    color: white;
+    h1 {
+        font-family: $font_title; 
+        font-weight: normal; 
+        margin-bottom: 15px;
+    }
+    p {
+        margin: 0 0 8px 0;
+    }
+    a {
+        color: white;
+    }
 }
 
 .fa-utensils {
